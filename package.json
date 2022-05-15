@@ -1,0 +1,30 @@
+{
+  "name": "@0xflicker/nft-wgasdl",
+  "version": "1.0.0",
+  "description": "Download NFT Worlds Genesis Avatar skin downloader",
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
+  "author": "0xFlick <cmdrnft@protonmail.com>",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "cli": "npm run build:ts && node dist/index.js",
+    "build:ts": "tsc --outDir dist",
+    "build:typechain": "typechain --target ethers-v5 --out-dir src/contracts --glob ./node_modules/@openzeppelin/contracts/build/contracts/IERC721Metadata.json",
+    "prepublishOnly": "npm run build:ts"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.6.0",
+    "axios": "^0.27.2",
+    "commander": "^9.2.0",
+    "ethers": "^5.6.6",
+    "ipfs-http-client": "^56.0.3"
+  },
+  "devDependencies": {
+    "@typechain/ethers-v5": "^10.0.0",
+    "typechain": "^8.0.0",
+    "typescript": "^4.6.4"
+  }
+}
