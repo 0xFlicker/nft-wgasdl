@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Download NFT Worlds Genesis Avatar skin downloader",
   "main": "dist/index.js",
-  "bin": "dist/index.js",
+  "bin": "bin.js",
   "author": "0xFlick <cmdrnft@protonmail.com>",
   "repository": {
     "type": "git",
