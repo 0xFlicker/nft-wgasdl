@@ -2,7 +2,9 @@
 
 Download NFT Worlds Genesis Avatar Skins!
 
-Rather than paying upwards of $500+ for a Minecraft skin, why not just download it for free?
+Fetches minecraft skins from the metadata of the NFT tokens for the NFT Worlds Genesis Avatar collection.
+
+Remember, you can't copy an NFT-- but the metadata is for free.
 
 ## Usage
 
@@ -11,13 +13,13 @@ You'll need to have a relatively modern NodeJS installed
 To see all options:
 
 ```
-npx 0xflick/nft-wgasdl --help
+npx @0xflick/nft-wgasdl --help
 ```
 
 Running:
 
 ```
-npx 0xflick/nft-wgasdl
+npx @0xflick/nft-wgasdl
 ```
 
 Will download a random skin!

@@ -39,10 +39,10 @@ program.action(async ({ contract, token, output, rpc }) => {
     if (imageUrl.startsWith("ipfs://")) {
       imageUrl = `https://ipfs.infura.io/ipfs/${imageUrl.substring(7)}`;
     }
-    console.log(`Downloading ${imageUrl}`);
     const response = await axios.get(imageUrl, { responseType: "arraybuffer" });
     const image = response.data;
     fs.writeFileSync(join(output, `${token}.png`), image);
+    console.log(`Downloaded ${token}.png`);
   } catch (error) {
     console.error(error);
   }
